@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Gaurav Sutar | Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Gaurav Sutar - Portfolio, Education, Goals, Achievements" />
+  <meta name="author" content="Gaurav Sutar" />
+  <meta name="keywords" content="Gaurav Sutar, Portfolio, Software Developer, Student, India" />
+
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="Gaurav Sutar Portfolio" />
+  <meta property="og:image" content="link-to-your-preview-image.jpg" />
+  <meta property="og:description" content="Personal introduction portfolio site." />
+  <meta property="og:type" content="website" />
+  
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- DaisyUI -->
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</head>
+
+
+<body class="bg-gradient-to-br from-yellow-50 to-yellow-200 text-yellow-900 font-sans min-h-screen pb-24">
+
+  <!-- ✅ Cookie Consent Banner -->
+  <div id="cookie-banner" class="fixed bottom-0 inset-x-0 bg-yellow-100 border-t border-yellow-300 text-center p-4 shadow-lg z-50 hidden transition-all">
+    <p class="text-sm">
+      We use cookies to improve your experience. By using this site, you accept our use of cookies.
+      <button onclick="acceptCookies()" class="ml-4 px-3 py-1 bg-yellow-500 text-white rounded">Accept</button>
+    </p>
+  </div>
+
+  <!-- ✅ Navbar -->
+  <nav class="bg-yellow-100 shadow-md fixed w-full z-30 top-0 left-0">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-yellow-800 text-2xl font-bold">Gaurav Sutar</a>
+
+        <!-- ✅ Desktop Menu -->
+        <div class="hidden md:flex space-x-6 text-yellow-900 font-semibold">
+          <a href="#about" class="hover:text-yellow-700">About</a>
+          <a href="#achievements" class="hover:text-yellow-700">Achievements</a>
+          <a href="#goals" class="hover:text-yellow-700">Goals</a>
+          <a href="#personal" class="hover:text-yellow-700">Personal</a>
+          <a href="#contact" class="hover:text-yellow-700">Contact</a>
+          <a href="https://gauravsutar-26.github.io/gg/ " target="_blank" class="hover:text-yellow-700">Shop</a> <!-- ✅ Added -->
+        </div>
+
+        <!-- ✅ Mobile menu button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-yellow-800 focus:outline-none" aria-label="Toggle Menu">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-yellow-50 border-t border-yellow-200">
+      <a href="#about" class="block px-4 py-3 border-b border-yellow-200 hover:bg-yellow-100">About</a>
+      <a href="#achievements" class="block px-4 py-3 border-b border-yellow-200 hover:bg-yellow-100">Achievements</a>
+      <a href="#goals" class="block px-4 py-3 border-b border-yellow-200 hover:bg-yellow-100">Goals</a>
+      <a href="#personal" class="block px-4 py-3 border-b border-yellow-200 hover:bg-yellow-100">Personal</a>
+      <a href="#contact" class="block px-4 py-3 border-b border-yellow-200 hover:bg-yellow-100">Contact</a>
+      <a href="#https://gauravsutar-26.github.io/gg/ " target="" "block px-4 py-3 hover:bg-yellow-100">Shop</a> <!-- ✅ Added -->
+    </div>
+  </nav>
+
+  <!-- Spacer for fixed navbar -->
+  <div class="h-16"></div>
+
+  <!-- Spacer for fixed navbar -->
+<div class="h-16"></div>
+
+<!-- Attractive Day Buttons Section -->
+<div class="max-w-5xl mx-auto px-6 py-6 flex justify-center gap-6 bg-yellow-100 rounded-xl shadow-lg mb-10">
+  <a href="https://example.com/day1" target="_blank" rel="noopener"
+    class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white font-semibold rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <i class="fas fa-calendar-day"></i> Day 1
+  </a>
+  <a href="https://example.com/day2" target="_blank" rel="noopener"
+    class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white font-semibold rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <i class="fas fa-calendar-day"></i> Day 2
+  </a>
+  <a href="https://example.com/day3" target="_blank" rel="noopener"
+    class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white font-semibold rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <i class="fas fa-calendar-day"></i> Day 3
+  </a>
+  <a href="https://example.com/day4" target="_blank" rel="noopener"
+    class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white font-semibold rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <i class="fas fa-calendar-day"></i> Day 4
+  </a>
+  <a href="https://example.com/day5" target="_blank" rel="noopener"
+    class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-white font-semibold rounded-full shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl">
+    <i class="fas fa-calendar-day"></i> Day 5
+  </a>
+</div>
+
+
+
+
+  <!-- Welcome Section -->
+
+  <header class="max-w-5xl mx-auto px-6 py-12 bg-gradient-to-br from-yellow-200 to-yellow-100 rounded-xl shadow-lg mb-12">
+    <h1 class="text-center text-4xl font-extrabold text-yellow-800 mb-4">Welcome to My Personal Portfolio</h1>
+    <p class="text-center max-w-xl mx-auto mb-6 text-yellow-900">Hi there! I'm excited to share my journey, dreams, and digital world with you.</p>
+    <div class="flex flex-wrap justify-center items-center gap-10">
+      <img src="gaurav.JPG" alt="Photo of Gaurav Sutar"
+        class="rounded-full border-4 border-yellow-400 w-40 h-40 object-cover shadow-lg" />
+      <video controls class="rounded-lg shadow-lg max-w-full w-96">
+        <source src="vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 space-y-16">
+
+
+<!-- About Me -->
+<section id="about" class="bg-white bg-opacity-70 rounded-xl p-8 shadow-md">
+  <h2 class="text-3xl font-semibold mb-6 border-l-8 border-yellow-400 pl-4 text-yellow-800">About Me</h2>
+  <p><strong>Name:</strong> Gaurav Sutar</p>
+  <p><strong>Location:</strong> Boisar, Mumbai, Maharashtra</p>
+  <p><strong>Education:</strong> B.Tech in Electronics and Computer Science</p>
+  <p><strong>Languages Known:</strong> English, Hindi, Marathi, etc.</p>
+</section>
+
+<!-- Achievements -->
+<section id="achievements" class="bg-white bg-opacity-70 rounded-xl p-8 shadow-md">
+  <h2 class="text-3xl font-semibold mb-6 border-l-8 border-yellow-400 pl-4 text-yellow-800">Achievements</h2>
+  <ul class="list-disc list-inside space-y-2 text-yellow-900">
+    <li>Won blind C coding competition in 2024</li>
+    <li>Completed 30 days of code challenge</li>
+    <li>Built a delivery app using JavaScript</li>
+  </ul>
+</section>
+
+<!-- Future Goals -->
+<section id="goals" class="bg-white bg-opacity-70 rounded-xl p-8 shadow-md">
+  <h2 class="text-3xl font-semibold mb-6 border-l-8 border-yellow-400 pl-4 text-yellow-800">Future Goals</h2>
+  <p>I aim to become a software developer who creates impactful and scalable solutions. I want to contribute to open-source projects and build tools that help people improve their lives through technology.</p>
+</section>
+
+<!-- Personal Side -->
+<section id="personal" class="bg-white bg-opacity-70 rounded-xl p-8 shadow-md">
+  <h2 class="text-3xl font-semibold mb-6 border-l-8 border-yellow-400 pl-4 text-yellow-800">Personal Side</h2>
+
+  <h3 class="text-2xl font-semibold mt-4 mb-2 text-yellow-700">Hobbies</h3>
+  <p>I enjoy photography, cycling, and solving puzzles.</p>
+
+  <h3 class="text-2xl font-semibold mt-6 mb-2 text-yellow-700">Role Models</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Ratan Tata</strong> – for his philanthropy and ethics.</li>
+    <li><strong>MS Dhoni</strong> – for leadership and resilience.</li>
+  </ul>
+
+  <h3 class="text-2xl font-semibold mt-6 mb-2 text-yellow-700">Favorites</h3>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>Books:</strong> "Atomic Habits", "Deep Work"</li>
+    <li><strong>Websites:</strong> freeCodeCamp, GitHub</li>
+    <li><strong>Startups:</strong> Notion, Duolingo</li>
+  </ul>
+
+  <h3 class="text-2xl font-semibold mt-6 mb-2 text-yellow-700">Volunteering</h3>
+  <p>I volunteered at a local NGO to teach underprivileged children basic math and computer skills.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-white bg-opacity-70 rounded-xl p-8 shadow-md">
+  <h2 class="text-3xl font-semibold mb-8 border-l-8 border-yellow-400 pl-4 text-yellow-800 text-center">📬 Contact Me</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10 text-center sm:text-left text-yellow-900">
+    <p><strong>Phone:</strong> <a href="tel:+919359187729" class="underline hover:text-yellow-700">+91 9359187729</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919359187729" target="_blank" class="underline hover:text-yellow-700">Chat with me</a></p>
+    <p><strong>Email:</strong> <a href="mailto:sutargaurav026@gmail.com" class="underline hover:text-yellow-700">sutargaurav026@gmail.com</a></p>
+  </div>
+
+  <h3 class="text-2xl font-semibold mb-6">📍 Location</h3>
+  <div class="mb-10 rounded-lg overflow-hidden shadow-lg">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3897193841665!2d72.75720061485518!3d19.70366798672679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0bcd6b2a5c4db%3A0xfebc146bd5ae258b!2sBoisar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1621100000000!5m2!1sen!2sin"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      class="rounded-lg"
+    ></iframe>
+  </div>
+
+  <h3 class="text-2xl font-semibold mb-6">🔗 Social Media</h3>
+  <ul class="flex flex-wrap justify-center gap-6 mb-10 text-yellow-900">
+    <li><a href="https://instagram.com/gaurav_sutar_26" target="_blank" class="btn btn-outline btn-yellow-600"><i class="fab fa-instagram mr-2"></i> Instagram</a></li>
+    <li><a href="https://www.linkedin.com/in/gaurav-sutar-b19203343" target="_blank" class="btn btn-outline btn-yellow-600"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a></li>
+    <li><a href="https://x.com/GauravSutar026" target="_blank" class="btn btn-outline btn-yellow-600"><i class="fab fa-twitter mr-2"></i> Twitter</a></li>
+    <li><a href="https://github.com/gauravsutar-26" target="_blank" class="btn btn-outline btn-yellow-600"><i class="fab fa-github mr-2"></i> GitHub</a></li>
+  </ul>
+
+  <h3 class="text-2xl font-semibold mb-6">📨 Contact Form</h3>
+  <form action="https://formspree.io/f/xanokgaz" method="POST" class="space-y-6 max-w-lg mx-auto">
+    <div>
+      <label for="name" class="block mb-1 font-medium text-yellow-900">Your Name:</label>
+      <input type="text" id="name" name="name" required class="input input-bordered input-yellow-600 w-full" />
+    </div>
+    <div>
+      <label for="email" class="block mb-1 font-medium text-yellow-900">Your Email:</label>
+      <input type="email" id="email" name="_replyto" required class="input input-bordered input-yellow-600 w-full" />
+    </div>
+    <div>
+      <label for="message" class="block mb-1 font-medium text-yellow-900">Your Message:</label>
+      <textarea id="message" name="message" required rows="5" class="textarea textarea-bordered textarea-yellow-600 w-full"></textarea>
+    </div>
+    <button type="submit" class="btn btn-yellow-600 w-full">Send Message</button>
+  </form>
+</section>
+<br>
+<br>
+
+
+  </main>
+
+   <!-- ✨ Testimonials (Aligned with Main Layout) -->
+<section id="testimonials" class="max-w-5xl mx-auto px-6">
+  <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-md">
+    <h2 class="text-3xl font-semibold mb-6 border-l-8 border-yellow-400 pl-4 text-yellow-800">Testimonials</h2>
+
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="p-6 text-center">
+          <p class="text-lg italic">"Gaurav is a quick learner and a dedicated developer."</p>
+          <p class="mt-2 font-bold">– Teammate, Code Challenge</p>
+        </div>
+        <a href="#slide3" class="absolute left-0 btn btn-circle">❮</a>
+        <a href="#slide2" class="absolute right-0 btn btn-circle">❯</a>
+      </div>
+
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="p-6 text-center">
+          <p class="text-lg italic">"He helped our NGO with website basics. Grateful!"</p>
+          <p class="mt-2 font-bold">– NGO Coordinator</p>
+        </div>
+        <a href="#slide1" class="absolute left-0 btn btn-circle">❮</a>
+        <a href="#slide3" class="absolute right-0 btn btn-circle">❯</a>
+      </div>
+
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="p-6 text-center">
+          <p class="text-lg italic">"Always focused on quality and improvement."</p>
+          <p class="mt-2 font-bold">– Professor, ECS Dept.</p>
+        </div>
+        <a href="#slide2" class="absolute left-0 btn btn-circle">❮</a>
+        <a href="#slide1" class="absolute right-0 btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🍪 Cookie Consent -->
+<div id="cookie-consent" class="fixed bottom-4 right-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg p-4 max-w-sm z-50 transition-opacity duration-300">
+  <p class="text-sm text-gray-800 dark:text-gray-100 mb-2">
+    This website uses cookies to enhance the user experience. By using this site, you agree to our use of cookies.
+  </p>
+  <button onclick="document.getElementById('cookie-consent').classList.add('hidden')" class="mt-2 px-4 py-1 text-sm font-medium rounded-md bg-yellow-500 text-white hover:bg-yellow-600 transition">
+    Got it!
+  </button>
+</div>
+
+<script>
+  // Auto-hide cookie banner after 10 seconds (optional)
+  setTimeout(() => {
+    const consent = document.getElementById("cookie-consent");
+    if (consent) consent.classList.add("opacity-0", "pointer-events-none");
+  }, 10000);
+</script>
+
+
+
+  </main>
+
+  <!-- ✅ Footer remains same -->
+  <footer class="bg-yellow-100 text-yellow-900 text-center py-5 shadow-inner fixed bottom-0 w-full z-40">
+    <p class="text-sm">© 2025 Gaurav Sutar. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ JS for Menu Toggle -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- ✅ Cookie Consent Script -->
+  <script>
+    function acceptCookies() {
+      localStorage.setItem('cookieAccepted', 'yes');
+      document.getElementById('cookie-banner')?.classList.add('hidden');
+    }
+
+    window.addEventListener('load', () => {
+      const banner = document.getElementById('cookie-banner');
+      if (!localStorage.getItem('cookieAccepted')) {
+        banner.classList.remove('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
